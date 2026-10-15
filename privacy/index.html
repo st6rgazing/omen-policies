@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · Omen</title>
+    <meta name="description" content="What the Omen card game stores when you play in a browser or in Discord." />
+    <style>
+      :root { color-scheme: dark; }
+      html { background: #080809; }
+      body { margin: 0; color: #f1ede7; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; font-size: 1.05rem; line-height: 1.55; }
+      main { max-width: 38rem; margin: 0 auto; padding: 3.5rem 1.4rem 5rem; }
+      .mark { margin: 0; font-family: Palatino, "Iowan Old Style", Georgia, serif; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: #d9c28f; }
+      h1 { margin: 0.4rem 0 0.2rem; font-family: Palatino, "Iowan Old Style", Georgia, serif; font-weight: 500; font-size: 2.4rem; letter-spacing: -0.02em; }
+      .date { margin: 0 0 2rem; color: #a39a98; }
+      h2 { margin: 2rem 0 0.4rem; font-size: 1.05rem; }
+      p { margin: 0.6rem 0; }
+      ul { margin: 0.4rem 0; padding-left: 1.15rem; }
+      li { margin: 0.35rem 0; }
+      a { color: #d9c28f; }
+      nav { margin-top: 2.8rem; font-size: 0.95rem; }
+      nav a { margin-right: 1rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="mark">Omen</p>
+      <h1>Privacy policy</h1>
+      <p class="date">October 15, 2026</p>
+
+      <p>Omen is a card game you play in a browser or inside a Discord voice channel. This page says what the game stores. It does not cover Discord itself. <a href="https://discord.com/privacy">Discord has its own privacy policy.</a></p>
+
+      <h2>On your device</h2>
+      <p>If the browser allows it, Omen saves a few things locally:</p>
+      <ul>
+        <li>A seat token in the tab, so you can rejoin the same table if you close the Activity and come back.</li>
+        <li>Settings: the name you typed, volume, whether sound is on, motion, larger text, whether ending a turn asks first, whether the match log starts open, and whether you skipped the practice match.</li>
+      </ul>
+      <p>Omen does not use cookies, advertising, or analytics. This page doesn’t either. Clearing the site data for Omen removes what is saved on your device.</p>
+
+      <h2>On the server</h2>
+      <p>There is no Omen account.</p>
+      <p>When you sit at a table, the server keeps that table in a file so the match can continue if the server restarts. The file includes the display name at your seat, a seat token that lets that seat reconnect, the match (including the cards in each hand), and the last 40 chat messages.</p>
+      <p>People at your table can see your display name, your public stats, and the chat. They cannot see your hand.</p>
+      <p>An empty lobby is deleted when everyone has left. A table with a match stays in the file after the match ends, until it is removed from the server. That file is not published.</p>
+      <p>When a match ends, the server also keeps a short note in memory: an internal match id, the table code, who won, whether it was a draw, and the time. That note is gone when the server process stops. It does not include a Discord account.</p>
+      <p>The game code does not keep a list of IP addresses.</p>
+
+      <h2>Discord</h2>
+      <p>If you open Omen from Discord, the Activity asks for two permissions: <strong>identify</strong> and <strong>guilds</strong>.</p>
+      <p>identify is used to read your Discord user id, username, and display name. Your display name, or your username if you don’t have one, becomes your name at the table. The server sends the Discord access token back to your browser so the Activity can sign in. Omen does not save the access token or your Discord user id in the table file.</p>
+      <p>guilds is part of that login. Omen does not read or save the list of servers you belong to.</p>
+      <p>Inside Discord, the table code comes from the Activity instance, the channel, or the server, so people in the same instance share a table. That code is saved with the live table.</p>
+      <p>Discord still receives whatever it normally receives when you use an Activity. That stays under Discord’s policy.</p>
+
+      <h2>What we don’t do</h2>
+      <p>We don’t sell information, and we don’t share it with advertisers. Other players at your table see the game. Discord sees the Activity login. That’s the list.</p>
+
+      <h2>How long it stays</h2>
+      <p>Settings stay on your device until you clear them. A live table stays on the server until the lobby is empty or the file is removed. If you want a table taken down, ask, and we’ll remove it if we can still find it.</p>
+
+      <h2>Children</h2>
+      <p>Omen is not for children under 13. You also have to be old enough to use Discord.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the date at the top changes with it. The new version replaces this one when it is posted here.</p>
+
+      <h2>Contact</h2>
+      <p>Omen is run by <a href="https://github.com/st6rgazing">st6rgazing</a>. Questions, and requests to delete a table: <a href="https://github.com/st6rgazing/omen-policies/issues">open an issue</a>.</p>
+
+      <nav>
+        <a href="../terms/">Terms of service</a>
+        <a href="../">Omen</a>
+      </nav>
+    </main>
+  </body>
+</html>
